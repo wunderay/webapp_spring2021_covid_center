@@ -13,7 +13,9 @@
         <h1>Welcome to the Covid Assessment Website</h1>
     </header>
     <section style="padding: 10px;">
-        <div class="alert alert-primary"><h2>Please fill out this form:</h2></div>
+        <div class="alert alert-primary">
+            <h2>Please fill out this form:</h2>
+        </div>
         <article>
             <form>
                 <fieldset>
@@ -98,52 +100,60 @@
                             <span>Date of birth: </span>
                         </label>
                         <div class="col-sm-10">
-                            <input type="date" id="txtDoB" name="txtDoB" class="form-control"/>
+                            <input type="date" id="txtDoB" name="txtDoB" class="form-control" />
                         </div>
                     </div>
                 </fieldset>
                 <fieldset>
                     <legend>Part 2: Potential Symptioms</legend>
-                    <div class="alert alert-info"><h4>Select all symptoms that you had in the last 24 hours</h4></div>
+                    <div class="alert alert-info">
+                        <h4>Select all symptoms that you had in the last 24 hours</h4>
+                    </div>
                     <fieldset>
                         <div class="form-check">
-                            <input type="checkbox" id="cbFever" name="cbfever" value="fever" class="form-check-input"/>
+                            <input type="checkbox" id="cbFever" name="cbfever" value="fever" class="form-check-input" />
                             <label for="cbFever" class="form-check-label">Fever</label><br />
 
-                            <input type="checkbox" id="cbCough" name="cbCough" value="Cough" class="form-check-input"/>
+                            <input type="checkbox" id="cbCough" name="cbCough" value="Cough" class="form-check-input" />
                             <label for="cbCough" class="form-check-label">Cough</label><br />
 
-                            <input type="checkbox" id="cbShort" name="cbShort" value="Short" class="form-check-input"/>
-                            <label for="cbShort" class="form-check-label">Shortness of breath or difficulty breathing</label><br />
+                            <input type="checkbox" id="cbShort" name="cbShort" value="Short" class="form-check-input" />
+                            <label for="cbShort" class="form-check-label">Shortness of breath or difficulty
+                                breathing</label><br />
 
-                            <input type="checkbox" id="cbFatigue" name="cbFatigue" value="Fatigue" class="form-check-input"/>
+                            <input type="checkbox" id="cbFatigue" name="cbFatigue" value="Fatigue"
+                                class="form-check-input" />
                             <label for="cbFatigue" class="form-check-label">Fatigue</label><br />
 
-                            <input type="checkbox" id="cbAche" name="cbAche" value="Ache" class="form-check-input"/>
+                            <input type="checkbox" id="cbAche" name="cbAche" value="Ache" class="form-check-input" />
                             <label for="cbAche" class="form-check-label">Muscle or body aches</label><br />
 
-                            <input type="checkbox" id="cbHeadache" name="cbHeadache" value="Headache" class="form-check-input"/>
+                            <input type="checkbox" id="cbHeadache" name="cbHeadache" value="Headache"
+                                class="form-check-input" />
                             <label for="cbHeadache" class="form-check-label">Headache</label><br />
 
-                            <input type="checkbox" id="cbLoss" name="cbLoss" value="Loss" class="form-check-input"/>
+                            <input type="checkbox" id="cbLoss" name="cbLoss" value="Loss" class="form-check-input" />
                             <label for="cbLoss" class="form-check-label">New loss of taste or smell</label><br />
 
-                            <input type="checkbox" id="cbSore" name="cbSore" value="Sore" class="form-check-input"/>
+                            <input type="checkbox" id="cbSore" name="cbSore" value="Sore" class="form-check-input" />
                             <label for="cbSore" class="form-check-label">Sore throat</label><br />
 
-                            <input type="checkbox" id="cbCongestion" name="cbCongestion" value="Congestion" class="form-check-input"/>
+                            <input type="checkbox" id="cbCongestion" name="cbCongestion" value="Congestion"
+                                class="form-check-input" />
                             <label for="cbCongestion" class="form-check-label">Congestion or runny nose</label><br />
 
-                            <input type="checkbox" id="cbNausea" name="cbNausea" value="Nausea" class="form-check-input"/>
+                            <input type="checkbox" id="cbNausea" name="cbNausea" value="Nausea"
+                                class="form-check-input" />
                             <label for="cbNausea" class="form-check-label">Nausea or vomiting</label><br />
 
-                            <input type="checkbox" id="cbDiarrhea" name="cbDiarrhea" value="Diarrhea" class="form-check-input"/>
+                            <input type="checkbox" id="cbDiarrhea" name="cbDiarrhea" value="Diarrhea"
+                                class="form-check-input" />
                             <label for="cbDiarrhea" class="form-check-label">Diarrhea</label><br />
 
-                            <input type="checkbox" id="cbNone" name="cbNone" value="None" class="form-check-input"/>
+                            <input type="checkbox" id="cbNone" name="cbNone" value="None" class="form-check-input" />
                             <label for="cbNone" class="form-check-label">None</label><br />
                         </div>
-                        
+
                     </fieldset> <br>
                     <div class="row form-group col">
                         <label for="ddContact">
@@ -151,7 +161,7 @@
                                 caring for someone who is diagnosed with COVID-19 in the last
                                 14 days and were not wearing proper personal protective
                                 equipment?</span>
-                            </label><br /><br />
+                        </label><br /><br />
                         <select id="ddContact" name="ddContact" class="form-control">
                             <option value="No" selected>No</option>
                             <option value="Yes">Yes</option>
@@ -161,7 +171,7 @@
                         <label for="ddDiagnosed">
                             <span>Have you had a diagnosis of COVID-19 in the last 10
                                 days?</span>
-                            </label><br /><br />
+                        </label><br /><br />
                         <select id="ddDiagnosed" name="ddDiagnosed" class="form-control">
                             <option value="No" selected>No</option>
                             <option value="Yes">Yes</option>
@@ -169,26 +179,27 @@
                     </div>
                     <fieldset>
                         <div class="row form-group col">
-                        <label for="ddTravel">
-                            <span>Have you travelled to any country in the last 14 days?</span>
-                        </label>
-                        <select id="ddTravel" name="ddTravel" class="form-control">
-                            <option value="No" selected>No</option>
-                            <option value="Yes">Yes</option>
-                        </select>
+                            <label for="ddTravel">
+                                <span>Have you travelled to any country in the last 14 days?</span>
+                            </label>
+                            <select id="ddTravel" name="ddTravel" class="form-control">
+                                <option value="No" selected>No</option>
+                                <option value="Yes">Yes</option>
+                            </select>
                         </div>
                         <div class="form-group col">
-                        <label for="txtCountry">
-                            <span><br />If yes, list countries visited seperated by comma:
-                            </span>
-                        </label>
-                        <input type="text" id="txtCountry" name="txtCountry" required class="form-control"/>
+                            <label for="txtCountry">
+                                <span><br />If yes, list countries visited seperated by comma:
+                                </span>
+                            </label>
+                            <input type="text" id="txtCountry" name="txtCountry" required class="form-control" />
                         </div>
                     </fieldset>
                     <div class="row form-group col">
                         <label for="ddSocialize">
                             <span>Have you socialized with a group of 6 or more people in the
                                 last 14 days?</span>
+                        </label>
                         <select id="ddSocialize" name="ddSocialize" class="form-control">
                             <option value="No" selected>No</option>
                             <option value="Yes">Yes</option>
@@ -198,7 +209,8 @@
                         <label for="txtTemp">
                             <span>Current Temperature: </span>
                         </label>
-                        <input type="text" id="txtTemp" name="txtTemp" required pattern="[0-9]{0,3}.[0-9]{0,2}"  class="form-control"/>
+                        <input type="text" id="txtTemp" name="txtTemp" required pattern="[0-9]{0,3}.[0-9]{0,2}"
+                            class="form-control" />
                     </div>
                     <div>
                         <button type="submit" class="btn btn-primary">Submit</button>
