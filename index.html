@@ -13,7 +13,7 @@
         <h1>Welcome to the Covid Assessment Website</h1>
     </header>
     <section style="padding: 10px;">
-        <h2>Please fill out this form:</h2>
+        <div class="alert alert-primary"><h2>Please fill out this form:</h2></div>
         <article>
             <form>
                 <fieldset>
@@ -101,100 +101,109 @@
                             <input type="date" id="txtDoB" name="txtDoB" class="form-control"/>
                         </div>
                     </div>
-                    <p>
-                        <button type="submit">Submit</button>
-                    </p>
                 </fieldset>
                 <fieldset>
                     <legend>Part 2: Potential Symptioms</legend>
-                    <h4>Select all symptoms that you had in the last 24 hours</h4>
+                    <div class="alert alert-info"><h4>Select all symptoms that you had in the last 24 hours</h4></div>
                     <fieldset>
-                        <!-- I think it's a btter idea to use checkboxes for multiple yes/no questions than dropdown -->
-                        <input type="checkbox" id="cbFever" name="cbfever" value="fever" />
-                        <label for="cbFever">Fever</label><br />
-                        <input type="checkbox" id="cbCough" name="cbCough" value="Cough" />
-                        <label for="cbCough">Cough</label><br />
-                        <input type="checkbox" id="cbShort" name="cbShort" value="Short" />
-                        <label for="cbShort">Shortness of breath or difficulty breathing</label><br />
-                        <input type="checkbox" id="cbFatigue" name="cbFatigue" value="Fatigue" />
-                        <label for="cbFatigue">Fatigue</label><br />
-                        <input type="checkbox" id="cbAche" name="cbAche" value="Ache" />
-                        <label for="cbAche">Muscle or body aches</label><br />
-                        <input type="checkbox" id="cbHeadache" name="cbHeadache" value="Headache" />
-                        <label for="cbHeadache">Headache</label><br />
-                        <input type="checkbox" id="cbLoss" name="cbLoss" value="Loss" />
-                        <label for="cbLoss">New loss of taste or smell</label><br />
-                        <input type="checkbox" id="cbSore" name="cbSore" value="Sore" />
-                        <label for="cbSore">Sore throat</label><br />
-                        <input type="checkbox" id="cbCongestion" name="cbCongestion" value="Congestion" />
-                        <label for="cbCongestion">Congestion or runny nose</label><br />
-                        <input type="checkbox" id="cbNausea" name="cbNausea" value="Nausea" />
-                        <label for="cbNausea">Nausea or vomiting</label><br />
-                        <input type="checkbox" id="cbDiarrhea" name="cbDiarrhea" value="Diarrhea" />
-                        <label for="cbDiarrhea">Diarrhea</label><br />
-                        <input type="checkbox" id="cbNone" name="cbNone" value="None" />
-                        <label for="cbNone">None</label><br />
+                        <div class="form-check">
+                            <input type="checkbox" id="cbFever" name="cbfever" value="fever" class="form-check-input"/>
+                            <label for="cbFever" class="form-check-label">Fever</label><br />
+
+                            <input type="checkbox" id="cbCough" name="cbCough" value="Cough" class="form-check-input"/>
+                            <label for="cbCough" class="form-check-label">Cough</label><br />
+
+                            <input type="checkbox" id="cbShort" name="cbShort" value="Short" class="form-check-input"/>
+                            <label for="cbShort" class="form-check-label">Shortness of breath or difficulty breathing</label><br />
+
+                            <input type="checkbox" id="cbFatigue" name="cbFatigue" value="Fatigue" class="form-check-input"/>
+                            <label for="cbFatigue" class="form-check-label">Fatigue</label><br />
+
+                            <input type="checkbox" id="cbAche" name="cbAche" value="Ache" class="form-check-input"/>
+                            <label for="cbAche" class="form-check-label">Muscle or body aches</label><br />
+
+                            <input type="checkbox" id="cbHeadache" name="cbHeadache" value="Headache" class="form-check-input"/>
+                            <label for="cbHeadache" class="form-check-label">Headache</label><br />
+
+                            <input type="checkbox" id="cbLoss" name="cbLoss" value="Loss" class="form-check-input"/>
+                            <label for="cbLoss" class="form-check-label">New loss of taste or smell</label><br />
+
+                            <input type="checkbox" id="cbSore" name="cbSore" value="Sore" class="form-check-input"/>
+                            <label for="cbSore" class="form-check-label">Sore throat</label><br />
+
+                            <input type="checkbox" id="cbCongestion" name="cbCongestion" value="Congestion" class="form-check-input"/>
+                            <label for="cbCongestion" class="form-check-label">Congestion or runny nose</label><br />
+
+                            <input type="checkbox" id="cbNausea" name="cbNausea" value="Nausea" class="form-check-input"/>
+                            <label for="cbNausea" class="form-check-label">Nausea or vomiting</label><br />
+
+                            <input type="checkbox" id="cbDiarrhea" name="cbDiarrhea" value="Diarrhea" class="form-check-input"/>
+                            <label for="cbDiarrhea" class="form-check-label">Diarrhea</label><br />
+
+                            <input type="checkbox" id="cbNone" name="cbNone" value="None" class="form-check-input"/>
+                            <label for="cbNone" class="form-check-label">None</label><br />
+                        </div>
+                        
                     </fieldset>
-                    <p>
+                    <div class="row form-group col">
                         <label for="ddContact">
                             <span>Have you had contact (within 6 feet for > 15 minutes), or
                                 caring for someone who is diagnosed with COVID-19 in the last
                                 14 days and were not wearing proper personal protective
                                 equipment?</span>
-                            <strong><abbr title="required">*</abbr></strong> </label><br /><br />
-                        <select id="ddContact" name="ddContact">
+                            </label><br /><br />
+                        <select id="ddContact" name="ddContact" class="form-control">
                             <option value="No" selected>No</option>
                             <option value="Yes">Yes</option>
                         </select>
-                    </p>
-                    <p>
+                    </div>
+                    <div class="row form-group col">
                         <label for="ddDiagnosed">
                             <span>Have you had a diagnosis of COVID-19 in the last 10
                                 days?</span>
-                            <strong><abbr title="required">*</abbr></strong> </label><br /><br />
-                        <select id="ddDiagnosed" name="ddDiagnosed">
+                            </label><br /><br />
+                        <select id="ddDiagnosed" name="ddDiagnosed" class="form-control">
                             <option value="No" selected>No</option>
                             <option value="Yes">Yes</option>
                         </select>
-                    </p>
-                    <p></p>
+                    </div>
                     <fieldset>
+                        <div class="row form-group col">
                         <label for="ddTravel">
                             <span>Have you travelled to any country in the last 14 days?</span>
-                            <strong><abbr title="required">*</abbr></strong>
                         </label>
-                        <select id="ddTravel" name="ddTravel">
+                        <select id="ddTravel" name="ddTravel" class="form-control">
                             <option value="No" selected>No</option>
                             <option value="Yes">Yes</option>
                         </select>
-                        <br />
+                        </div>
+                        <div class="form-group col">
                         <label for="txtCountry">
                             <span><br />If yes, list countries visited seperated by comma:
                             </span>
-                            <strong><abbr title="required">*</abbr></strong>
                         </label>
-                        <input type="text" id="txtCountry" name="txtCountry" required />
+                        <input type="text" id="txtCountry" name="txtCountry" required class="form-control"/>
+                        </div>
                     </fieldset>
-                    <p>
+                    <div class="row form-group col">
                         <label for="ddSocialize">
                             <span>Have you socialized with a group of 6 or more people in the
                                 last 14 days?</span>
-                            <strong><abbr title="required">*</abbr></strong> </label><br /><br />
-                        <select id="ddSocialize" name="ddSocialize">
+                        <select id="ddSocialize" name="ddSocialize" class="form-control">
                             <option value="No" selected>No</option>
                             <option value="Yes">Yes</option>
                         </select>
-                    </p>
-                    <p>
+                    </div>
+                    <div class="row form-group col-sm-2">
                         <label for="txtTemp">
                             <span>Current Temperature: </span>
-                            <strong><abbr title="required">*</abbr></strong>
                         </label>
-                        <input type="text" id="txtTemp" name="txtTemp" required pattern="[0-9]{0,3}.[0-9]{0,2}" />
-                    </p>
-                    <p>
-                        <button type="submit">Submit</button>
-                    </p>
+                        <input type="text" id="txtTemp" name="txtTemp" required pattern="[0-9]{0,3}.[0-9]{0,2}"  class="form-control"/>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                    </div>
                 </fieldset>
             </form>
         </article>
